@@ -7,6 +7,7 @@ import { Textarea } from "../ui/textarea";
 import { Skeleton } from "../ui/skeleton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import LessonPreview from "./LessonPreview";
 
 const LessonForm = () => {
   const [formData, setFormData] = useState({
@@ -158,9 +159,7 @@ const LessonForm = () => {
             </div>
           )}
 
-          {/* {generatedPlan && !loading && (
-            <LessonPreview lessonPlan={generatedPlan} />
-          )} */}
+          {generatedPlan && !loading && <LessonPreview lessonPlan={generatedPlan} />}
         </CardContent>
       </Card>
     </div>
