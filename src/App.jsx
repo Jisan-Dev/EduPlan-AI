@@ -1,10 +1,10 @@
 import { Button } from "./components/ui/button";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-      <Button className="ml-1.5">button</Button>
+      <Login />
     </>
   );
 }
