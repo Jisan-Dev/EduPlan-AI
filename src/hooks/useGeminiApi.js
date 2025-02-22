@@ -41,12 +41,14 @@ export const useGeminiApi = () => {
       `;
       const result = await model.generateContent(prompt);
       const response = await result.response;
+      console.log("response in hook ", response);
       const text = response.text();
+      console.log("text in hook ", text);
 
       // Parse JSON from the response
       const jsonMatch = text.match(/```json\n([\s\S]*?)\n```/) || text.match(/{[\s\S]*}/);
       const jsonString = jsonMatch ? jsonMatch[1] || jsonMatch[0] : text;
-
+      console.log("jsonString in hook ", jsonString);
       return JSON.parse(jsonString);
     } catch (error) {
       console.error("Error generating lesson plan:", error);
