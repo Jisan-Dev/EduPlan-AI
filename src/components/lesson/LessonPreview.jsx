@@ -92,8 +92,8 @@ const LessonPreview = ({ lessonPlan }) => {
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-24">Duration</TableHead>
-                      <TableHead>Activity</TableHead>
-                      <TableHead className="w-48">Remarks</TableHead>
+                      <TableHead className="w-46">Activity</TableHead>
+                      <TableHead>Remarks</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
