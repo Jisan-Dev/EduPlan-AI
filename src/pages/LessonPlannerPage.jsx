@@ -2,17 +2,9 @@ import LessonForm from "@/components/lesson/LessonForm";
 import { ModeToggle } from "@/components/ModeToggle";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/context/AuthContext";
-import { useNavigate } from "react-router";
 
 const LessonPlannerPage = () => {
   const { logout } = useAuth();
-  const navigate = useNavigate();
-
-  const { isAuthenticated } = useAuth();
-
-  if (isAuthenticated !== "true") {
-    navigate("/login");
-  }
 
   return (
     <div className="min-h-screen">

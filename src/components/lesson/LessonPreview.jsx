@@ -48,7 +48,7 @@ const LessonPreview = ({ lessonPlan }) => {
           <Button onClick={handlePrint}>Download as PDF</Button>
         </CardHeader>
         <CardContent>
-          <div className="p-4 border rounded-md bg-white" ref={componentRef}>
+          <div className="p-4 border rounded-md " ref={componentRef}>
             <div className="mb-8">
               <h1 className="text-2xl font-bold text-center mb-6">Lesson Plan: {lessonPlan.topic}</h1>
 
