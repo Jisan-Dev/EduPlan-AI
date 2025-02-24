@@ -22,18 +22,6 @@ const LessonPreview = ({ lessonPlan }) => {
         }
       }
     `,
-    onBeforeGetContent: () => {
-      // Optional: Prepare content before printing
-      if (componentRef.current) {
-        componentRef.current.classList.add("printing");
-      }
-    },
-    onAfterPrint: () => {
-      // Optional: Cleanup after printing
-      if (componentRef.current) {
-        componentRef.current.classList.remove("printing");
-      }
-    },
   });
 
   // Format today's date
