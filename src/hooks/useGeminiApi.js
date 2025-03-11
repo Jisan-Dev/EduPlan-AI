@@ -12,7 +12,7 @@ export const useGeminiApi = () => {
     try {
       const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
       const genAi = new GoogleGenerativeAI(API_KEY);
-      const model = genAi.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAi.getGenerativeModel({ model: "gemini-1.5-pro" });
 
       const prompt = `
         Create a detailed lesson plan on the topic "${data.topic}" for grade level "${data.gradeLevel}".
